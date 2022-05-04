@@ -1,27 +1,19 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100px;
-    background-color: #1D49AE;
-    color: white;
-}
-
-.logo {
-    font-family: 'Belleza', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  background-color: azure;
 }
 
 .links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
+  margin: 0 20px;
+  text-decoration: none;
+  color: black;
 }
