@@ -28,7 +28,7 @@ npm start
 
 ## Use Starter Code
 
-You can use boilerplate code to begin creating your app
+You can use boilerplate code to begin creating your app!
 
 ```
 cd starter-code
