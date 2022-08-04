@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  background-color: #1e8d14;
+  color: white;
+}
+
+.logo {
+  font-family: 'Belleza', sans-serif;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Belleza', sans-serif;
+  font-size: 30px ;
+}
+
+a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
