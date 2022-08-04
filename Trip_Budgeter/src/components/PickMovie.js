@@ -16,27 +16,14 @@ import { PieChart,
 
 
 
-var CityVal;
-
-
 const PickMovie = () => {
     const [randomMovie, setRandomMovie] = useState({});
     const [picked, setPicked] = useState(false)
-
-    const [city, setCity] = useState('');
-
-    const cityHandler = (event) => {
-        setCity(event.target.value);
-        CityVal = event.target.value;
-        console.log(event.target.value);
-    }
-
-
+    
     const  moviePicker = () => {
-        const city = obj => obj.value === CityVal;
-        console.log(CityVal);
-        //console.log(randomMovie)
-        setRandomMovie(data[data.findIndex(city)]);
+        const random = data[Math.floor(Math.random() * data.length)];
+        console.log(randomMovie)
+        setRandomMovie(random);
         setPicked(true);
     }
 
@@ -53,6 +40,8 @@ const PickMovie = () => {
         setPicked(false)
     }
 
+    
+    
     
         return (
            <div>
@@ -87,7 +76,8 @@ const PickMovie = () => {
        </div>
 
         );
-
+    
+    
 }
 
 export default PickMovie

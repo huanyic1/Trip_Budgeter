@@ -29,13 +29,13 @@ const CustomTooltip = ({prices}) => {
 var city = "nyc" //read in later
 var num_days = 3 //pull in later
 if (city == "nyc"){
-    var living_price = num_days * citydata[0]["avghotelcost"]
+    var living_price = num_days * citydata[0]["living"]
     var food_price = 3*num_days * citydata[0]["food"]
     var fun_price = num_days * citydata[0]["entertainment"]
     var transport_price = num_days *citydata[0]["transportation"]
 }
 else if (city == "bos"){
-    var living_price = num_days * citydata[1]["avghotelcost"]
+    var living_price = num_days * citydata[1]["living"]
     var food_price = 3*num_days * citydata[1]["food"]
     var fun_price = num_days * citydata[1]["entertainment"]
     var transport_price = num_days *citydata[1]["transportation"]
