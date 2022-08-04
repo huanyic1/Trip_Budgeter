@@ -35,14 +35,30 @@ const AddMovie = () => {
 
     return (
         <div className="form">
-            <h1 className="title">Add Movie</h1>
-            <label>Movie Title</label>
-            <input onChange={nameHandler}></input>
-            <label>Genre</label>
+
+            <h1 className="title">Add Cost</h1>
+            <label>Location</label>
+            <div>
+                <select>
+                    <option value="None">Select</option>
+                    <option value="NYC">New York City</option>
+                    <option value="BOS">Boston</option>
+                </select>
+            </div>
+            <label>Type</label>
+            <div>
+                <select>
+                    <option value="None">Select</option>
+                    <option value="living">Living</option>
+                    <option value="food">Food</option>
+                    <option value="entertainment">Entertainment</option>
+                </select>
+            </div>
+            <label>Name</label>
             <input onChange={genreHandler}></input>
-            <label>Image</label>
+            <label>Amount Spent</label>
             <input onChange={imageHandler}></input>
-            <button onClick={addMovieHandler}>Add Movie</button>
+            <button onClick={addMovieHandler}>Add Cost</button>
         </div>
     )
 }

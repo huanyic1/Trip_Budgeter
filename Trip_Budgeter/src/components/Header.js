@@ -5,11 +5,10 @@ import './Header.css'
 const Header = () => {
     return (
         <div className="header">
-            <h1 className="logo"> Movie Picker</h1>
+            <h1 className="logo"> Trip Budgeter</h1>
             <div className="links">
-                <Link to="/movie">Pick Movie</Link>
-                <Link to="/">Movie Catalog</Link>
-                <Link to="/add">Add a Movie</Link>
+                <Link to="/trip">Take a trip!</Link>
+                <Link to="/add">Help us improve!</Link>
             </div>
         </div>
     )

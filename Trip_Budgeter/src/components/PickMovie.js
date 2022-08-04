@@ -20,14 +20,29 @@ const PickMovie = () => {
     return (
 
         <div>
-            <h1 className="title">Pick a Movie</h1>
+            <h1 className="title">Let's Travel!</h1>
+            <label>Location</label>
+            <div>
+                <select>
+                    <option value="None">Select</option>
+                    <option value="NYC">New York City</option>
+                    <option value="BOS">Boston</option>
+                </select>
+            </div>
+            <div>
+            <label>Number of Days Staying</label>
+            </div>
+            <div>
+            <input></input>
+            </div>
+            
             {picked && 
             <div className ="picked">
                 <div></div>
                 <Movie name={randomMovie.name} image={randomMovie.img} genre={randomMovie.genre}/>
                 <button className="pickButton" onClick={pickAgain} >Pick Again</button>
             </div>}
-            {!picked && <button onClick={moviePicker}>Pick a Movie</button>}
+            {!picked && <button onClick={moviePicker}>Let's Go!</button>}
             
             
         </div>

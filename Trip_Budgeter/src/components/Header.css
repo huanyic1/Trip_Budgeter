@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-evenly;
   height: 100px;
-  background-color: #1d49ae;
+  background-color: #1e8d14;
   color: white;
 }
 
@@ -15,7 +15,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Belleza', sans-serif;
+  font-size: 30px ;
 }
 
 a {
