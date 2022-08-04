@@ -1,4 +1,4 @@
-.picked {
+/* .picked {
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -11,3 +11,9 @@
     height: fit-content;
     margin-left: 40px;
 }
+
+*/
+.center {
+
+    align-items: center;
+    } 
