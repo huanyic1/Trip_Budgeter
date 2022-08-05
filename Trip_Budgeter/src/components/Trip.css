@@ -1,26 +1,22 @@
 img {
-    width: 250px;
-    height: 370px;
+    width: 450px;
+    height: 570px;
     border-radius: 10px;
-}
-.movie {
-    background-color: #C6D2ED;
-    border: 30px solid #C6D2ED;
+    }
+    .movie {
+    /* background-color: #548687; */
+    /* border: 30px solid #548687; */
     border-radius: 10px;
     margin: 30px;
-}
-
-.movieName {
+    }
+    .movieName {
     font-weight:bold;
     font-size: 20px;
-}
-
-.PieChart {
+    }
+    .PieChart {
     text-align: center;
     margin: 0 auto;
     display: flex;
-   align-items: center ;
-   justify-content: center;
-}
-
-
+    align-items: center ;
+    justify-content: center;
+    }

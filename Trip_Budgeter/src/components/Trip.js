@@ -39,6 +39,7 @@ const Trip = () => {
 
 
 
+
     function updateInfo() {
         var city = userInput[0].cityValue;
         var num_days = userInput[0].numberOfDays;
@@ -58,6 +59,7 @@ const Trip = () => {
         }
     }
     updateInfo();
+
 
     // var living_price = 0
     // var num_liv = 0
@@ -88,9 +90,10 @@ const Trip = () => {
     return (
         <div>
             <h1>Expected Cost Breakdown</h1>
+
             <div className="PieChart">
                 <div>
-                    <ResponsiveContainer width={1000} height={500} className="text-center">
+                    <ResponsiveContainer width={1200} height={500} className="text-center">
                         <PieChart width={1000} height={500}>
                             <Pie
                                 style={{ marginLeft: 'auto', marginRight: 'auto', left: 0, right: 0 }}
@@ -110,6 +113,7 @@ const Trip = () => {
                     </ResponsiveContainer>
                 </div>
                 {/* <p>Hotels = <script type="text/javascript">
+
             document.write(num_days) 
                 </script>
                   * 

@@ -144,28 +144,32 @@ const AddMovie = () => {
         <div className="form">
 
             <h1 className="title">Add Cost</h1>
-            <label>Location</label>
+            <label className='input_label'>Location</label>
+            <br></br>
             <div>
-                <select onChange={cityHandler}>
-                    <option value="None">Select</option>
-                    <option value="NYC">New York City, NY</option>
-                    <option value="BOS">Boston, MA</option>
+                <select className='drop_down' onChange={cityHandler}>
+                    <option className="input_text" value="None">Select</option>
+                    <option className="input_text" value="NYC">New York City, NY</option>
+                    <option className="input_text" value="BOS">Boston, MA</option>
                 </select>
             </div>
-            <label>Type</label>
+            <br></br>
+            <label className='input_label'>Type</label>
+            <br></br>
             <div>
-                <select onChange = {typeHandler}>
-                    <option value="None">Select</option>
+                <select className='drop_down' onChange = {typeHandler}>
+                    <option className="input_text" value="None">Select</option>
                     <option value="living">Living</option>
                     <option value="food">Food</option>
                     <option value="entertainment">Entertainment</option>
                     <option value="transportation">Transportation</option>
                 </select>
             </div>
-            <label>Name</label>
-            <input onChange={genreHandler}></input>
-            <label>Amount Spent</label>
-            <input onChange={imageHandler}></input>
+            <br></br>
+            <label className='input_label' >Name</label>
+            <input className='input_box' onChange={genreHandler}></input>
+            <label className='input_label'>Amount Spent</label>
+            <input className='input_box' onChange={imageHandler} ></input>
             <button onClick={addMovieHandler}>Add Cost</button>
         </div>
     )
