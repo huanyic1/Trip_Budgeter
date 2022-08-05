@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
-import logo from './Logo3.png';
+import logo from './Logo5.png';
 
 
 const Header = () => {
@@ -9,7 +9,8 @@ const Header = () => {
         <div className="header">
             <Link to= "/">
              <img src={logo} className="icon"></img>
-             <h1 className="logo"> Capital Voyagers</h1>
+             {/* <h1 className="logo"> Capital </h1>
+             <h1 className="logo2">Voyagers</h1> */}
              </Link>
              {/* <h1 className="logo"> Capital Voyagers</h1> */}
             <div className="links">

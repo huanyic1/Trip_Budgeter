@@ -43,11 +43,11 @@ input {
     color: rgb(5, 0, 0);
   }
   .input_text {
-    font-size: 50px;
-    display: flex;
+    font-size: 20px;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
-    color: rgb(5, 0, 0);
+    color: rgb(5, 0, 0); */
   }

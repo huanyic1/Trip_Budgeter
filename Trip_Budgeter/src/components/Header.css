@@ -13,7 +13,15 @@
 
 .logo {
   font-family: 'Belleza', sans-serif;
-  color:black;
+  color:#0716e9;
+  display:inline;
+  
+}
+.logo2 {
+  font-family: 'Belleza', sans-serif;
+  color:#fc0404
+;
+  display:inline;
 }
 
 .links {
@@ -34,7 +42,7 @@ a {
 }
 
 .icon{
-  width: 100px;
+  width: 400px;
   height: 100px;
   /*margin: 0 20px;*/
   font-weight: 600;
