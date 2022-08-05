@@ -41,15 +41,6 @@ else if (city == "bos"){
     var transport_price = num_days *citydata[1]["transportation"]
 }
 
-// var living_price = 0
-// var num_liv = 0
-// for (let i = 0; i<expenses.length; i+=1){
-//     if (expenses[i]["type"] == "living"){
-//         num_liv+=1
-//         living_price += expenses[i]["cost"]
-//     }
-
-// }
 
 
 

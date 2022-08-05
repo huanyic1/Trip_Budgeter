@@ -10,3 +10,44 @@ input {
     margin-top: 10px;
 
 }
+
+.drop_down{
+    font-size: 14px;
+    padding: 10px 8px 10px 14px;
+    background: rgb(239, 239, 236);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: relative;
+    width: 400px;
+    height: 75px
+  }
+
+.input_box{
+    font-size: 14px;
+    padding: 10px 8px 10px 14px;
+    background: rgb(239, 239, 236);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: relative;
+    width: 375px;
+    height: 60px
+  }
+
+  .input_label {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(5, 0, 0);
+  }
+  .input_text {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    color: rgb(5, 0, 0);
+  }

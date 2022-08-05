@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import React, {useState} from 'react'
 import Movie from './Movie';
 import Trip from "./Trip"; 
@@ -83,4 +81,4 @@ const PickMovie = () => {
 }
 
 export default PickMovie
->>>>>>> 70430c0bf180546dda02ce7871a0f232d0bbe3bd
+
