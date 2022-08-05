@@ -56,6 +56,9 @@ const PickMovie = () => {
         //console.log(randomMovie)
         setRandomMovie(data[data.findIndex(city)]);
         setPicked(true);
+        setPicked(true)
+        userInput[0].numberOfDays = days;
+        userInput[0].cityValue = cityValue;
         }
 
 
@@ -63,9 +66,9 @@ const PickMovie = () => {
 
     const displayLocation = () =>{
         //console.log(<Trip/>)
-        setPicked(true)
-        userInput[0].numberOfDays = days;
-        userInput[0].cityValue = cityValue;
+        // setPicked(true)
+        // userInput[0].numberOfDays = days;
+        // userInput[0].cityValue = cityValue;
         //console.log(userInput[0].numberOfDays);
         //console.log(days);
         
