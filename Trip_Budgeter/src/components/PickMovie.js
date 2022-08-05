@@ -13,18 +13,41 @@ import { PieChart,
     CartesianGrid,
     ResponsiveContainer,
     Bar} from "recharts"; 
+    import { userInput } from '../data/userInput'
+
 
 var CityVal;
+
 
 const PickMovie = () => {
     const [randomMovie, setRandomMovie] = useState({});
     const [picked, setPicked] = useState(false)
+
+
+    const [days, setDays] = useState('')
+
+    let dayCount;
+    const [cityValue, setCityValue] = useState('')
+
     const [city, setCity] = useState('');
+
     
-    const cityHandler = (event) => {
-        setCity(event.target.value);
-        CityVal = event.target.value;
-        console.log(event.target.value);
+    const dayHandler = (event) => {
+        setDays(event.target.value);
+        //dayCount = event.target.value;
+        //console.log(dayCount);
+    }
+    //console.log(days);
+
+
+    
+    const cityInputHandler = (event) => {
+      setCity(event.target.value);
+            CityVal = event.target.value;
+            console.log(event.target.value);
+        setCityValue(event.target.value);
+        //cityValue = event.target.value;
+        //console.log(cityValue);
     }
 
     const moviePicker = () => {
@@ -37,9 +60,14 @@ const PickMovie = () => {
 
 
 
+
     const displayLocation = () =>{
-        console.log(<Trip/>)
+        //console.log(<Trip/>)
         setPicked(true)
+        userInput[0].numberOfDays = days;
+        userInput[0].cityValue = cityValue;
+        //console.log(userInput[0].numberOfDays);
+        //console.log(days);
         
     }
 
@@ -54,7 +82,9 @@ const PickMovie = () => {
            <h1 className="title">Let's Travel!</h1>
            <label className='input_label'>Location</label>
            <div>
-               <select className='drop_down' onChange={cityHandler}>
+
+               <select className='drop_down' onChange={cityInputHandler}>
+
                    <option value="None">Select</option>
                    <option value="NYC">New York City</option>
                    <option value="BOS">Boston</option>
@@ -65,7 +95,9 @@ const PickMovie = () => {
            <label className='input_label'>Number of Days Staying</label>
            </div>
            <div>
-           <input className='input_box'></input>
+
+           <input className='input_box' onChange={dayHandler}></input>
+
            </div>
            
            {picked && 
