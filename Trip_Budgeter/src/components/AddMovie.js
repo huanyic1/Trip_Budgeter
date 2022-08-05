@@ -148,9 +148,9 @@ const AddMovie = () => {
             <br></br>
             <div>
                 <select className='drop_down' onChange={cityHandler}>
-                    <option className="input_text" value="None">Select</option>
-                    <option className="input_text" value="NYC">New York City, NY</option>
-                    <option className="input_text" value="BOS">Boston, MA</option>
+                    <option value="None">Select</option>
+                    <option  value="NYC">New York City, NY</option>
+                    <option  value="BOS">Boston, MA</option>
                 </select>
             </div>
             <br></br>
@@ -158,7 +158,7 @@ const AddMovie = () => {
             <br></br>
             <div>
                 <select className='drop_down' onChange = {typeHandler}>
-                    <option className="input_text" value="None">Select</option>
+                    <option value="None">Select</option>
                     <option value="living">Living</option>
                     <option value="food">Food</option>
                     <option value="entertainment">Entertainment</option>
