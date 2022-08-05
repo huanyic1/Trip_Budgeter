@@ -20,3 +20,13 @@ img {
     align-items: center ;
     justify-content: center;
     }
+
+    .subtext{
+        font-size: 18px; 
+        /* font-family: 'Belleza', sans-serif; */
+    }
+    .total{
+        font-size: 18px; 
+        font-weight: bold;
+        /* font-family: 'Belleza', sans-serif; */
+    }
