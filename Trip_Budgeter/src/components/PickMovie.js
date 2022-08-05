@@ -27,12 +27,13 @@ const PickMovie = () => {
         console.log(event.target.value);
     }
 
-    const  moviePicker = () => {
-        const random = data[Math.floor(Math.random() * data.length)];
-        console.log(randomMovie)
-        setRandomMovie(random);
+    const moviePicker = () => {
+        const city = obj => obj.value === CityVal;
+        console.log(CityVal);
+        //console.log(randomMovie)
+        setRandomMovie(data[data.findIndex(city)]);
         setPicked(true);
-    }
+        }
 
 
 
@@ -53,7 +54,7 @@ const PickMovie = () => {
            <h1 className="title">Let's Travel!</h1>
            <label className='input_label'>Location</label>
            <div>
-               <select className='drop_down'>
+               <select className='drop_down' onChange={cityHandler}>
                    <option value="None">Select</option>
                    <option value="NYC">New York City</option>
                    <option value="BOS">Boston</option>
