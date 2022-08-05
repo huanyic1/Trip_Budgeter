@@ -3,6 +3,7 @@ import {useNavigate} from 'react-router-dom'
 import { data } from '../data/data'
 import './AddMovie.css'
 import { citydata } from '../data/citydata'
+import { userInput } from '../data/userInput'
 
 
 
