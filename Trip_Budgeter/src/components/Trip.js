@@ -57,7 +57,7 @@ const Trip = () => {
             <h1>Expected Cost Breakdown</h1>
             <div className = "PieChart">
             <div> 
-            <ResponsiveContainer width={1000} height={500} className="text-center">
+            <ResponsiveContainer width={1200} height={500} className="text-center">
             <PieChart width={1000} height={500}>
                     <Pie
                     style={{marginLeft:'auto',marginRight:'auto',left:0,right:0}}
