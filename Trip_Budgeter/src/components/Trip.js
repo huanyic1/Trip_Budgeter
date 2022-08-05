@@ -25,16 +25,6 @@ const Trip = () => {
 
     let tripdata;
 
-    const CustomTooltip = ({ prices }) => {
-
-        return (
-            <div className="custom-tooltip">
-
-                <p className="desc">${prices[0].value}</p>
-            </div>
-        );
-
-    };
 
 
 
@@ -61,15 +51,7 @@ const Trip = () => {
     updateInfo();
 
 
-    // var living_price = 0
-    // var num_liv = 0
-    // for (let i = 0; i<expenses.length; i+=1){
-    //     if (expenses[i]["type"] == "living"){
-    //         num_liv+=1
-    //         living_price += expenses[i]["cost"]
-    //     }
 
-    // }
 
 
     function addTripData() {
@@ -84,6 +66,48 @@ const Trip = () => {
 
     addTripData();
 
+
+    
+
+    const getIntroOfPage = (label) => {
+        if (label === 'Living') {
+          return "Page A is about men's clothing";
+        }
+        if (label === 'Food') {
+          return "Page B is about women's dress";
+        }
+        if (label === 'Entertainment') {
+          return "Page C is about women's bag";
+        }
+        if (label === 'Transport') {
+          return 'Page D is about household goods';
+        }
+        
+        return label;
+      };
+      
+      const CustomTooltip = ({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+          return (
+            <div className="custom-tooltip">
+              <p className="label">{`${label} : ${payload[0].value}`}</p>
+              <p className="intro">{getIntroOfPage(label)}</p>
+              <p className="desc">Anything you want can be displayed here.</p>
+            </div>
+          );
+        }
+      
+        return null;
+      };
+    const getCityNum = (city) =>{
+        if (city==="NYC"){
+            return 0
+        }
+        else{
+            return 1
+        }
+    }
+    
     console.log(tripdata);
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
     //const Trip = () => {
@@ -108,7 +132,7 @@ const Trip = () => {
                             />
 
                             <Tooltip />
-                            {/* <Tooltip content={<CustomTooltip prices ={tripdata}/>} /> */}
+                            {/* <Tooltip content={<CustomTooltip />} /> */}
                         </PieChart>
                     </ResponsiveContainer>
                 </div>
@@ -123,7 +147,12 @@ const Trip = () => {
 
             </div>
 
-
+        <p>For {userInput[0].numberOfDays} days in ${userInput[0].cityValue}, expect to spend: </p>
+        <p>{userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["living"]} on housing </p>
+        <p>3 x {userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["food"]} on food </p>
+        <p>{userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["entertainment"]} on fun </p>
+        <p>{userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["transportation"]} on transportation</p>
+        
         </div>
 
     );
