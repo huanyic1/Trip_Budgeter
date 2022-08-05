@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: -5px;
 }
 
 .App-link {
@@ -42,6 +43,8 @@
   font-family: 'Belleza', sans-serif;
   font-size: 50px;
   color: #1dae3f;
+  margin-bottom: -5px
+  
 }
 
 button {
