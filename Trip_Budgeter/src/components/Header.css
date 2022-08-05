@@ -4,7 +4,7 @@
   justify-content: space-evenly;
   height: 200px;
   background-color: #1e8d14;
-  background-image: url("tropical 3 blur.jpg");
+  background-image: url("leafs.jpeg");
   /*filter: blur(2px);
   -webkit-filter: blur(2px);*/
   color: black;
@@ -35,6 +35,6 @@ a {
 .icon{
   width: 100px;
   height: 100px;
-  margin: 0 20px;
+  /*margin: 0 20px;*/
   font-weight: 600;
 }
