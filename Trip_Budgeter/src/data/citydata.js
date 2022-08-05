@@ -7,7 +7,6 @@ export let citydata = [
         food: 25,
         entertainment: 20,
         transportation: 15
-
     }, 
     {
         city: 'Boston',
@@ -17,7 +16,6 @@ export let citydata = [
         food: 20,
         entertainment: 20,
         transportation: 15
-
     },
 ]
 
