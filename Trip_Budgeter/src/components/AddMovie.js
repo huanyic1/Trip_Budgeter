@@ -149,13 +149,10 @@ const AddMovie = () => {
             <div>
                 <select className='drop_down' onChange={cityHandler}>
                 <option value="NYC">New York City</option>
-                   
                    <option value="LA">Los Angeles</option>
                    <option value="FR">Paris</option>
                    <option value="ROM">Rome</option>
-
                    <option value="BOS">Boston</option>
-
                    <option value="LON">London</option>
                    <option value="BANG">Bangkok</option>
                    <option value="HK">Hong Kong</option>
