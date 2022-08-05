@@ -6,7 +6,7 @@ const Movie = ({name, genre, image}) => {
         <div className="movie">
             <img src={image}></img>
             <p className="movieName">{name}</p>
-            <p className="movieGenre">{genre}</p>
+            <p className="subtext">{genre}</p>
         </div>
     )
 }

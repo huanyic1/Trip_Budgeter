@@ -125,6 +125,8 @@ const PickMovie = () => {
             </div>
             </div>
             <div>
+            <h1 className= "phantom">.</h1>
+          
             <button className="pickButton" onClick={pickAgain} >Travel to Different Location</button> </div>
                         
            </div>}

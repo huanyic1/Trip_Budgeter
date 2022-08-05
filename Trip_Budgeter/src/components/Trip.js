@@ -147,12 +147,17 @@ const Trip = () => {
 
             </div>
 
-        <p>For {userInput[0].numberOfDays} days in ${userInput[0].cityValue}, expect to spend: </p>
-        <p>{userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["living"]} on housing </p>
-        <p>3 x {userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["food"]} on food </p>
-        <p>{userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["entertainment"]} on fun </p>
-        <p>{userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["transportation"]} on transportation</p>
-        
+        <p className='movieName'>For {userInput[0].numberOfDays} days in {userInput[0].cityValue}, expect to spend: </p>
+        <p className='subtext'>{userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["living"]} on housing </p>
+        <p className='subtext'>3 x {userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["food"]} on food </p>
+        <p className='subtext'>{userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["entertainment"]} on fun </p>
+        <p className='subtext'>{userInput[0].numberOfDays} x ${citydata[getCityNum(userInput[0].cityValue)]["transportation"]} on transportation</p>
+        <p className='total'>Total: ${userInput[0].numberOfDays * 
+        (citydata[getCityNum(userInput[0].cityValue)]["living"] +
+        3 * citydata[getCityNum(userInput[0].cityValue)]["food"] + 
+        citydata[getCityNum(userInput[0].cityValue)]["entertainment"] + 
+        citydata[getCityNum(userInput[0].cityValue)]["transportation"]
+                )}</p>
         </div>
 
     );
