@@ -90,7 +90,18 @@ const PickMovie = () => {
 
                    <option value="None">Select</option>
                    <option value="NYC">New York City</option>
+                   
+                   <option value="LA">Los Angeles</option>
+                   <option value="FR">Paris</option>
+                   <option value="ROM">Rome</option>
+
                    <option value="BOS">Boston</option>
+
+                   <option value="LON">London</option>
+                   <option value="BANG">Bangkok</option>
+                   <option value="HK">Hong Kong</option>
+                   <option value="MC">Monaco</option>
+                   <option value="DL">Dallas</option>
                </select>
            </div>
            <br></br>
@@ -118,6 +129,12 @@ const PickMovie = () => {
                         
            </div>}
            {!picked && <button onClick={moviePicker}>Let's Go!</button>}
+           <h1 className= "phantom">.</h1>
+           <h1 className= "phantom">.</h1>
+           <h1 className= "phantom">.</h1>
+           {/* <h1>.</h1>
+           <h1>.</h1>
+           <h1>.</h1> */}
            
            
        </div>

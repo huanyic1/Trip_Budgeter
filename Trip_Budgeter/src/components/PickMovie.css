@@ -66,3 +66,6 @@ align-items: center;
 width:100%;
 justify-content: space-evenly;
 }
+.phantom{
+    color: #ffff;
+}
