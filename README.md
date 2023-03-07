@@ -6,7 +6,7 @@ Ensure that Node version >= 14.0.0 and npm version>= 5.6 are installed on your m
 
 ## Run `Trip-Budgeter`
 
-The movie-picker repo includes completed code for a React website. In order to run the movie-picker application, clone or download this repo then run the following:
+The Trip-Budgeter repo includes completed code for a React website. In order to run the Trip-Budgeter application, clone or download this repo then run the following:
 
 ```cd React-101
 cd Trip-Budgeter
